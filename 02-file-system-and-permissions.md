@@ -1,5 +1,3 @@
-# 02-file-system-and-permissions.md
-
 # Linux File System & Permissions
 
 ## Introduction to the Linux File System
