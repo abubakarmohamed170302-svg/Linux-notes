@@ -1,5 +1,3 @@
-# 03-networking-processes.md
-
 # Linux Networking & Processes
 
 ## Introduction to Standard Streams
