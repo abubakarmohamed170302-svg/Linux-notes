@@ -1,5 +1,3 @@
-# bandit-walkthrough.md
-
 # OverTheWire Bandit Walkthrough 🐧
 
 ## What is Bandit?
