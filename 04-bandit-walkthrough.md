@@ -20,7 +20,7 @@ https://overthewire.org/wargames/bandit/
 
 ---
 
-# Connecting to Bandit
+## Connecting to Bandit
 
 ```bash id="f77gh0"
 ssh bandit0@bandit.labs.overthewire.org -p 2220
@@ -37,7 +37,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 ---
 
-# Commands Frequently Used
+## Commands Frequently Used
 
 | Command   | Purpose               |
 | --------- | --------------------- |
@@ -57,7 +57,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 ---
 
-# Bandit Level 0 → 1
+## Bandit Level 0 → 1
 
 ```bash id="6ubt6x"
 ls
@@ -72,7 +72,7 @@ cat readme
 
 ---
 
-# Bandit Level 1 → 2
+## Bandit Level 1 → 2
 
 ```bash id="jhlb3s"
 cat ./-
@@ -84,7 +84,7 @@ Files named `-` require `./` so Linux treats them as filenames.
 
 ---
 
-# Bandit Level 2 → 3
+## Bandit Level 2 → 3
 
 ```bash id="e7y9m8"
 cat ./"--spaces in this filename--"
@@ -96,7 +96,7 @@ Quotes handle spaces safely in filenames.
 
 ---
 
-# Bandit Level 3 → 4
+## Bandit Level 3 → 4
 
 ```bash id="mjlwm0"
 ls -a
@@ -108,7 +108,7 @@ ls -a
 
 ---
 
-# Bandit Level 4 → 5
+## Bandit Level 4 → 5
 
 ```bash id="q28jsl"
 file ./*
@@ -120,7 +120,7 @@ Use `file` to identify readable files and file types.
 
 ---
 
-# Bandit Level 5 → 6
+## Bandit Level 5 → 6
 
 ```bash id="5v0bd0"
 find . -type f -size 1033c -readable
@@ -136,7 +136,7 @@ find . -type f -size 1033c -readable
 
 ---
 
-# Bandit Level 6 → 7
+## Bandit Level 6 → 7
 
 ```bash id="zkp2g0"
 find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
@@ -151,10 +151,16 @@ find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ```bash id="w2xq3g"
 2>/dev/null
 ```
+---
+
+## Bandit Level 7 → 8
+
+```bash
+grep "millionth" data.txt
 
 ---
 
-# Bandit Level 8 → 9
+## Bandit Level 8 → 9
 
 ```bash id="x8nlf1"
 sort data.txt | uniq -u
@@ -166,7 +172,7 @@ Pipes combine commands together.
 
 ---
 
-# Bandit Level 9 → 10
+## Bandit Level 9 → 10
 
 ```bash id="l8g62o"
 strings data.txt | grep "="
@@ -179,7 +185,7 @@ strings data.txt | grep "="
 
 ---
 
-# Bandit Level 10 → 11
+## Bandit Level 10 → 11
 
 ```bash id="o4t4nh"
 base64 -d data.txt
@@ -191,7 +197,7 @@ Decode Base64 encoded data.
 
 ---
 
-# Bandit Level 11 → 12
+## Bandit Level 11 → 12
 
 ```bash id="9u9z3y"
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
@@ -203,7 +209,7 @@ ROT13 shifts letters 13 positions in the alphabet.
 
 ---
 
-# Bandit Level 12 → 13
+## Bandit Level 12 → 13
 
 ### Important Commands
 
@@ -227,7 +233,7 @@ to identify file types before extracting them.
 
 ---
 
-# Bandit Level 13 → 14
+## Bandit Level 13 → 14
 
 ### Important Commands
 
@@ -243,7 +249,7 @@ SSH can use private key authentication instead of passwords.
 
 ---
 
-# Bandit Level 14 → 15
+## Bandit Level 14 → 15
 
 ```bash id="pcwrrf"
 cat password | nc localhost 30000
@@ -255,7 +261,7 @@ cat password | nc localhost 30000
 
 ---
 
-# Bandit Level 15 → 16
+## Bandit Level 15 → 16
 
 ```bash id="30bncx"
 openssl s_client -connect localhost:30001
@@ -267,7 +273,7 @@ Some services require encrypted SSL/TLS communication.
 
 ---
 
-# Bandit Level 16 → 17
+## Bandit Level 16 → 17
 
 ### Important Commands
 
@@ -290,7 +296,7 @@ This level combined:
 
 ---
 
-# Bandit Level 17 → 18
+## Bandit Level 17 → 18
 
 ```bash id="p1jlwm"
 diff passwords.old passwords.new
@@ -302,7 +308,7 @@ diff passwords.old passwords.new
 
 ---
 
-# Key Linux Skills Learned
+## Key Linux Skills Learned
 
 * Linux navigation
 * SSH
@@ -317,7 +323,7 @@ diff passwords.old passwords.new
 
 ---
 
-# Why Bandit is Useful
+## Why Bandit is Useful
 
 Bandit helps build:
 

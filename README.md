@@ -73,7 +73,7 @@ A practical Linux command-line walkthrough covering:
 - SSH keys
 - Problem-solving
 
-[View OverTheWire Bandit Walkthrough](./bandit-walkthrough.md)
+[View OverTheWire Bandit Walkthrough](./04-bandit-walkthrough.md)
 
 ---
 
