@@ -157,6 +157,12 @@ find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
 
 ```bash
 grep "millionth" data.txt
+```
+
+### Key Lesson
+
+- Use `grep` to search for specific text inside a file.
+- When you know part of the line you need, `grep` can quickly locate it.
 
 ---
 
